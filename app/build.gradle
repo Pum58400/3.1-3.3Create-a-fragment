@@ -22,14 +22,14 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 28
     dataBinding {
         enabled = true
     }
     defaultConfig {
         applicationId 'com.example.android.navigation'
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 28
         vectorDrawables.useSupportLibrary = true
         versionCode 1
         versionName "1.0"
@@ -51,7 +51,10 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$supportlibVersion"
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha1'
+    //implementation 'com.android.support:appcompat-v7:28'
+
     implementation 'androidx.legacy:legacy-support-v4:1.0.0-beta01'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
